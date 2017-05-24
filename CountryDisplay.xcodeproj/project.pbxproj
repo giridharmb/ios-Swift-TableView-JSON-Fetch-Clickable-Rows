@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		E3CE7BEB1ED5D1BE00AC3F63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE7BEA1ED5D1BE00AC3F63 /* AppDelegate.swift */; };
-		E3CE7BED1ED5D1BE00AC3F63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE7BEC1ED5D1BE00AC3F63 /* ViewController.swift */; };
 		E3CE7BF01ED5D1BE00AC3F63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3CE7BEE1ED5D1BE00AC3F63 /* Main.storyboard */; };
 		E3CE7BF21ED5D1BE00AC3F63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3CE7BF11ED5D1BE00AC3F63 /* Assets.xcassets */; };
 		E3CE7BF51ED5D1BE00AC3F63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3CE7BF31ED5D1BE00AC3F63 /* LaunchScreen.storyboard */; };
 		E3CE7C001ED5D1BE00AC3F63 /* CountryDisplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE7BFF1ED5D1BE00AC3F63 /* CountryDisplayTests.swift */; };
 		E3CE7C0B1ED5D1BE00AC3F63 /* CountryDisplayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE7C0A1ED5D1BE00AC3F63 /* CountryDisplayUITests.swift */; };
+		E3CE7C1B1ED5D2C100AC3F63 /* TableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE7C1A1ED5D2C100AC3F63 /* TableTableViewController.swift */; };
+		E3CE7C1D1ED5DC4600AC3F63 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE7C1C1ED5DC4600AC3F63 /* DestinationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		E3CE7BE71ED5D1BE00AC3F63 /* CountryDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountryDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3CE7BEA1ED5D1BE00AC3F63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E3CE7BEC1ED5D1BE00AC3F63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E3CE7BEF1ED5D1BE00AC3F63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3CE7BF11ED5D1BE00AC3F63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3CE7BF41ED5D1BE00AC3F63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		E3CE7C061ED5D1BE00AC3F63 /* CountryDisplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountryDisplayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3CE7C0A1ED5D1BE00AC3F63 /* CountryDisplayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDisplayUITests.swift; sourceTree = "<group>"; };
 		E3CE7C0C1ED5D1BE00AC3F63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3CE7C1A1ED5D2C100AC3F63 /* TableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableTableViewController.swift; sourceTree = "<group>"; };
+		E3CE7C1C1ED5DC4600AC3F63 /* DestinationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				E3CE7BEA1ED5D1BE00AC3F63 /* AppDelegate.swift */,
-				E3CE7BEC1ED5D1BE00AC3F63 /* ViewController.swift */,
 				E3CE7BEE1ED5D1BE00AC3F63 /* Main.storyboard */,
+				E3CE7C1C1ED5DC4600AC3F63 /* DestinationViewController.swift */,
 				E3CE7BF11ED5D1BE00AC3F63 /* Assets.xcassets */,
 				E3CE7BF31ED5D1BE00AC3F63 /* LaunchScreen.storyboard */,
 				E3CE7BF61ED5D1BE00AC3F63 /* Info.plist */,
+				E3CE7C1A1ED5D2C100AC3F63 /* TableTableViewController.swift */,
 			);
 			path = CountryDisplay;
 			sourceTree = "<group>";
@@ -262,8 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3CE7BED1ED5D1BE00AC3F63 /* ViewController.swift in Sources */,
+				E3CE7C1B1ED5D2C100AC3F63 /* TableTableViewController.swift in Sources */,
 				E3CE7BEB1ED5D1BE00AC3F63 /* AppDelegate.swift in Sources */,
+				E3CE7C1D1ED5DC4600AC3F63 /* DestinationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +425,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = wmt.CountryDisplay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -434,6 +439,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = wmt.CountryDisplay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
